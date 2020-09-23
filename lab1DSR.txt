@@ -1,0 +1,44 @@
+
+
+//Program 1
+vec<-c(30,40,50,60,70)
+vec
+vec * 2
+vec / 2 
+vec %% 2
+vec + 6 
+vex<-c('one','two','Three','Four','Five')
+vex
+class(vec)
+class(vex)
+max(c(11,4.2,-7.8,2.0,0))
+c(3,7,1,1) + c(8,9,10,11)
+c(2,3,5,7)  %/% c(2,3)
+c(2,5,4,2,1,1)%%2 
+c(2,3,8,1) ^ c(2,3)
+
+//Program 2
+x<-c(1:15)
+x
+x[5]
+x[0]
+x[1:5]
+x[1:2]
+x[-6]
+x[c(3,1,2)]
+x[x>5]
+abs(c(-1.9,-2.4,-3,4.2,5))
+sqrt(c(4,9,16,25))
+sum(c(2,3,5,7))
+prod(c(2,3,5,7))
+
+
+
+
+getwd()
+list.files()
+help(vector)
+?plot
+example(mean)
+help.start()
+demo(graphics)
