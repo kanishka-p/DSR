@@ -1,0 +1,30 @@
+getwd()
+bk<-read.csv("Churn_Modelling.csv")
+bk
+nrow(bk)
+colnames(bk)
+class(bk)
+str(bk)
+bk$EstimatedSalary
+min(bk$EstimatedSalary)
+max(bk$EstimatedSalary)
+salary_group<-vector(mode="character",length=length(bk$EstimatedSalary))
+salary_group
+salary_group[bk$EstimatedSalary<10000]<-"Low"
+salary_group
+salary_group[bk$EstimatedSalary>=10000 & bk$EstimatedSalary < 55000]<-"middle"
+salary_group[bk$EstimatedSalary>55000]<-"High"
+salary_group
+spender<-factor(salary_group,levels=c("Low","middle","High"),ordered=TRUE)
+spender
+bk<-cbind(bk,spender)
+bk
+str(bk$spender)
+head(bk$spender)
+head(bk)
+tail(bk)
+bk$spender
+bk[1:6,]
+bk[1:10,]
+write.table(bk,file="file20.csv", row.names=FALSE)
+getwd()
